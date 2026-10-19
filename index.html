@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio QA Engineer - Nama Kamu" />
+  <title>Alwi | QA Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">Alwi<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#samples">QA Documentation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Ganti tema">🌓</button>
+      <button id="menu-toggle" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Fachrurozi Alwi</h1>
+      <h2>Junior QA Engineer</h2>
+      <p class="lead">
+        I am a Junior QA Engineer passionate about manual testing and software quality. I focus on analyzing requirements, designing effective test cases, executing tests, and reporting defects to help deliver reliable, high-quality software.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="cv.pdf" class="btn btn-outline" download>Download CV</a>
+      </div>
+      <div class="stats">
+        <div><strong>300</strong><span>My Test Cases</span></div>
+        <div><strong>15</strong><span>Bug Found</span></div>
+        <div><strong>2</strong><span>Projects Tested</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <!-- Taruh foto kamu di assets/foto.jpg (rasio persegi, mis. 600x600). -->
+        <!-- Jika file belum ada, inisial di bawah ini yang tampil. Ganti "NK" dengan inisialmu. -->
+        <div class="avatar-wrap">
+          <span class="avatar-placeholder">NK</span>
+          <img src="assets/foto.png" alt="Foto profil Nama Kamu" class="avatar"
+               onerror="this.remove()" />
+        </div>
+        <div>
+          <p>
+            I am a Junior QA Engineer with a Computer Science background and practical experience in manual testing through QA bootcamp projects. I have tested OrangeHRM and E-Logistic Javas, covering authentication, employee management, purchase requests, and purchase orders.
+            My skills include test case design, functional and negative testing, test execution, and defect reporting. I am detail-oriented, eager to learn, and committed to helping teams deliver reliable, high-quality software through structured testing.
+          </p>
+          <ul class="facts">
+            <li><strong>Location:</strong> Bekasi, Indonesia</li>
+            <li><strong>Work Experience:</strong> QA Tester at PT Javas Karya Tungga — 3 Months</li>
+            <li><strong>Training:</strong> QA Engineer Bootcamp — PT Nusacodes</li>
+            <li><strong>Status:</strong> Open to QA Intern, Junior QA Engineer & Manual Tester Opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <h2 class="section-title">Skill &amp; Tools</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Manual Testing</h3>
+          <div class="skills">
+            <span class="chip">Requirement Analysis</span>
+            <span class="chip">Test Plan</span>
+            <span class="chip">Test Scenario</span>
+            <span class="chip">Test Case</span>
+            <span class="chip">Test Execution</span>
+            <span class="chip">Functional Testing</span>
+            <span class="chip">Negative Testing</span>
+            <span class="chip">Regression Testing</span>
+            <span class="chip">Bug Reporting</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>API Testing</h3>
+          <div class="skills">
+            <span class="chip">Postman</span>
+            <span class="chip">REST API</span>
+            <span class="chip">JSON</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Automation</h3>
+          <div class="skills">
+            <span class="chip">Selenium Basic</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Git &amp; GitHub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Supporting Tools</h3>
+          <div class="skills">
+            <span class="chip">Trello</span>
+            <span class="chip">Spreadsheet</span>
+            <span class="chip">Basic SQL</span>
+            <span class="chip">Requirement Analysis</span>
+            <span class="chip">Agile / Scrum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / CASE STUDIES -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Test Case Studies</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="badge">Manual · Web</span>
+          <h3>Testing OrangeHRM Website</h3>
+          <p><strong>Objective:</strong> Ensure that the Login, Admin, and Employee PIM features function correctly.</p>
+          <p><strong>Scope:</strong> 165 test cases executed, 6 bugs identified (1 critical).</p>
+          <p><strong>Results:</strong> Identified 6 bugs involving validation messages, password visibility, and password reset functionality. Recommended improvements include consistent validation messages, a functional password visibility toggle, and proper validation of unregistered usernames.</p>
+          <!-- <p class="tags">Test Plan · Test Case · Trello</p> -->
+          <div class="card-links">
+            <a href="https://docs.google.com/document/d/1tXXXi4HIgVKEt7QBBE49j0GFJOXQcq-2sGqJQMAx_yg/edit?usp=sharing" target="_blank" rel="noopener">Test Plan</a>
+            <a href="https://docs.google.com/spreadsheets/d/1-S3azJJzTph2tS-Zq2KYIFs9rZpwWoa_vwYuiV_igVo/edit?usp=sharing" target="_blank" rel="noopener">Test Case</a>
+            <a href="https://docs.google.com/spreadsheets/d/1g7tlYWIG5jDraZP8gpJ3h3A6k0fhS-g9SXjNYTNA-Tw/edit?usp=sharing" target="_blank" rel="noopener">Bug Report</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">API</span>
+          <h3>API Testing dengan Postman</h3>
+          <p><strong>Tujuan:</strong> Memvalidasi endpoint (status code, response body, error handling).</p>
+          <p><strong>Cakupan:</strong> XX request, positive &amp; negative scenario.</p>
+          <p><strong>Hasil:</strong> Collection Postman dan laporan hasil run.</p>
+          <p class="tags">Postman · REST · JSON</p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">Collection</a>
+            <a href="#" target="_blank" rel="noopener">Laporan</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">Automation</span>
+          <h3>Automation Test Login &amp; Checkout</h3>
+          <p><strong>Tujuan:</strong> Mengotomasi skenario regression yang sering diulang.</p>
+          <p><strong>Cakupan:</strong> XX skenario otomatis, dijalankan via CI.</p>
+          <p><strong>Hasil:</strong> Waktu regression berkurang dari X menit ke Y menit.</p>
+          <p class="tags">Cypress/Selenium · JavaScript · GitHub</p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">Repository</a>
+            <a href="#" target="_blank" rel="noopener">Laporan</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SAMPLE DOCUMENTS -->
+    <section id="samples" class="section alt">
+      <h2 class="section-title">QA Documentation Examples</h2>
+
+      <h3 class="sub-title">Test Case Examples</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Test Scenario</th><th>Test Case</th><th>Steps</th><th>Expected Result</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TC-001</td>
+              <td>Verify Login Functionality</td>
+              <td>Verify user can log in with valid credentials</td>
+              <td>1. Open E-logistic Web<br>2. Input Valid Username &amp; Valid Password<br>3. Click Login</td>
+              <td>User successfully logged in and redirected to dashboard</td>
+              <td><span class="status pass">Pass</span></td>
+            </tr>
+            <tr>
+              <td>TC-002</td>
+              <td>Verify Login Functionality</td>
+              <td>Verify user cannot log in using a case-sensitive username</td>
+              <td>1. Open E-Logistic Web<br>2. Input Username with case-sensitive &amp; Input Password Valid<br>3. Click Login</td>
+              <td>User cannot log in using a case-sensitive username and validation messages at 'login failed, the credentials do not match our records'</td>
+              <td><span class="status fail">Fail</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub-title">Bug Report Examples</h3>
+      <div class="bug">
+        <p><strong>ID:</strong> BUG-001 &nbsp;|&nbsp; <strong>Severity:</strong> Major &nbsp;|&nbsp; <strong>Priority:</strong> High</p>
+        <p><strong>Bug Title:</strong> Login Allows Case-Sensitive Username Mismatch</p>
+        <p><strong>Environment:</strong> Firefox 158.0, Windows 11, build staging v1.2.0</p>
+        <p><strong>Steps to Reproduce</strong></p>
+        <ol>
+          <li>Open E-Logistic Web</li>
+          <li>Input Valid Username with case-sensitive &amp; Input Valid Password</li>
+          <li>Click Login</li>
+        </ol>
+        <p><strong>Actual Result</strong> User can log in successfully using 'SuperAdmin' instead of the registered username 'superadmin'. The error message is not displayed</p>
+        <p><strong>Expected Result</strong> User cannot log in using a case-sensitive username and validation messages at 'login failed, the credentials do not match our records'</p>
+        <p><strong>Attachments:</strong> <a href="https://drive.google.com/file/d/1Nxomq5-e6pN23YtltK8Lfeugh9E15wFq/view?usp=sharing" target="_blank">View Screenshot</a></p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section">
+      <h2 class="section-title">Education &amp; Certifications</h2>
+      <ul class="timeline">
+        <li><strong>Bootcamp QA Engineer</strong><span>Nusacodes · 2026</span></li>
+        <li><strong>Certifications</strong><span>MySkill Academy UI-UX Research and Design Fullstack Intensive . 2025</span></li>
+        <li><strong>Formal Education</strong><span>Bina Insani University · Computer Science · 2023</span></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <h2 class="section-title">Contacts</h2>
+      <p class="center">Open to opportunities as a QA Engineer. Feel free to contact me.</p>
+      <div class="contact-links"> 
+        <a href="mailto:alwicls00@gmail.com" class="btn btn-primary">Email</a>
+        <a href="https://linkedin.com/in/fachrurozi-alwi-716198301" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        <a href="https://github.com/Fachrurozi-Alwi/QA-Portfolio.git" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Fachrurozi Alwi. Made with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
